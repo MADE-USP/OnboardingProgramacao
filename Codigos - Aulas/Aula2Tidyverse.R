@@ -1,4 +1,5 @@
-# Pra instalar, 
+# Pra instalar as bibliotecas, utilize install.packages("nome da biblioteca")
+# A base flights vem com a biblioteca nycflights13
 library(tidyverse)
 library(nycflights13)
 base_agrupada <- flights %>%
