@@ -7,5 +7,7 @@ confint(object=mediarenda)
 propsexo <- svymean(x=~V2007, design=dadosPNADc, na.rm=TRUE)
 propsexoraca <- svytotal(x=~V2007+V2010, design=dadosPNADc, 
                          na.rm=TRUE)
+propsexoraca_inter <- svytotal(x=~interaction(V2007, V2010), design=dadosPNADc, 
+                               na.rm=TRUE)
 medianarenda <- svyquantile(x=~VD4020, design=dadosPNADc,
                             quantiles=0.5, ci=FALSE, na.rm=TRUE)

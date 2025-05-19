@@ -39,4 +39,5 @@ plot <- ggplot(tabelaGrafico, aes(fill = raca_genero, x = decis, y = prop)) +
   ylab("Proporção (em %)") +
   xlab("Decis") +
   ggtitle("Composição Demográfica \n de Cada Decil de Renda") +
-  theme(plot.title = element_text(hjust = 0.5))
+  theme(plot.title = element_text(hjust = 0.5)) +
+  scale_x_continuous(breaks = seq(1, 10, 1))
